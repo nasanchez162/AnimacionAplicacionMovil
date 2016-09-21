@@ -13,6 +13,9 @@ public class Menu_principal extends ActionBarActivity {
 
     Button b_map;
     Button b_mejoras;
+    Button b_coleccionables;
+    Button b_perfil;
+    Button b_salir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +24,9 @@ public class Menu_principal extends ActionBarActivity {
 
         b_map = (Button) findViewById(R.id.b_map);
         b_mejoras = (Button) findViewById(R.id.b_updates);
+        b_coleccionables = (Button) findViewById(R.id.b_coleccionables);
+        b_perfil = (Button) findViewById(R.id.b_perfil);
+        b_salir = (Button) findViewById(R.id.b_salida);
     }
 
     public void onClickMapa(View view)
@@ -35,6 +41,26 @@ public class Menu_principal extends ActionBarActivity {
         Intent i = new Intent(this, Mejoras.class);
         startActivity(i);
 
+    }
+
+    public void onClickColeccionables(View view)
+    {
+        Intent i = new Intent(this, Coleccionables.class);
+        startActivity(i);
+
+    }
+
+    public void onClickPerfil(View view)
+    {
+        Intent i = new Intent(this, Perfil.class);
+        startActivity(i);
+
+    }
+
+    public void onClickSalir(View view)
+    {
+        finish();
+        System.exit(0);
     }
 
     @Override

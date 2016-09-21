@@ -20,8 +20,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Retornar"
-            android:id="@+id/b_retornar"
+            android:id="@+id/b_per_retornar"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:onClick="onClickMenuPrincipal" />
     </RelativeLayout>
 </LinearLayout>

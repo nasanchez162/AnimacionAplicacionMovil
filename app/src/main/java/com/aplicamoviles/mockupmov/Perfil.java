@@ -3,22 +3,23 @@ package com.aplicamoviles.mockupmov;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 /**
  * Created by Nelson on 20/09/2016.
  */
-public class Inicio extends Activity {
+public class Perfil extends Activity {
+
+    Button b_retorno;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.inicio);
-    }
+        setContentView(R.layout.perfil);
 
+        b_retorno = (Button) findViewById(R.id.b_per_retornar);
+    }
 
     public void onClickMenuPrincipal(View view)
     {
@@ -26,5 +27,6 @@ public class Inicio extends Activity {
         startActivity(i);
 
     }
+
 }
 
