@@ -16,9 +16,9 @@ public class Mejoras extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mapa);
+        setContentView(R.layout.mejoras);
 
-        b_retorno = (Button) findViewById(R.id.b_retornar);
+        b_retorno = (Button) findViewById(R.id.b_me_retornar);
     }
 
     public void onClickMenuPrincipal(View view)

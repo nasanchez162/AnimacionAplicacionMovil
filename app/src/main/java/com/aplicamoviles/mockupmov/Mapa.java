@@ -21,7 +21,7 @@ public class Mapa extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mapa);
 
-        b_retorno = (Button) findViewById(R.id.b_retornar);
+        b_retorno = (Button) findViewById(R.id.b_ma_retornar);
     }
 
     public void onClickMenuPrincipal(View view)
