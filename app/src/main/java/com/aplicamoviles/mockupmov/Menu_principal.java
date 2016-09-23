@@ -3,6 +3,7 @@ package com.aplicamoviles.mockupmov;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -22,7 +23,13 @@ public class Menu_principal extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Linea para bloquear giro de pantalla
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
         setContentView(R.layout.menu_principal);
+
+
+
 
         b_map = (Button) findViewById(R.id.b_map);
         b_mejoras = (Button) findViewById(R.id.b_updates);
@@ -64,11 +71,11 @@ public class Menu_principal extends ActionBarActivity {
         //finish();
         //System.exit(0);
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setTitle("Exit Application?");
+        alertDialogBuilder.setTitle("Salir de la aplicacion?");
         alertDialogBuilder
-                .setMessage("Click yes to exit!")
+                .setMessage("Presione Si para salir de la aplicacion!")
                 .setCancelable(false)
-                .setPositiveButton("Yes",
+                .setPositiveButton("Si",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 moveTaskToBack(true);
